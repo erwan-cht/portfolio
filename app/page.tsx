@@ -7,14 +7,16 @@ const formations = [
         lieu: "IUT d'Amiens - Université de Picardie Jules Verne",
         periode: "2024 — 2027",
         description:
-            "Formation en développement, réseaux, bases de données et gestion de projet.",
+            "Formation complète couvrant le développement logiciel, l'architecture réseau, la gestion de bases de données et la conduite de projet.",
+        acquis: "Au-delà de l'apprentissage de nouveaux langages, ce cursus m'apprend à concevoir des architectures logicielles robustes et à comprendre le cycle de vie complet d'une application. Le travail régulier en équipe, encadré par des méthodes agiles, m'a permis de développer une véritable posture professionnelle et d'apprendre à collaborer efficacement sur du code commun.",
     },
     {
         titre: "Baccalauréat général - Mention Bien",
         lieu: "Lycée Robert de Luzarches - Amiens",
         periode: "2021 — 2024",
         description:
-            "Spécialité NSI (Numérique et Sciences de l'Informatique) et Mathématiques avec l'option maths expertes.",
+            "Spécialités NSI (Numérique et Sciences de l'Informatique) et Mathématiques, complétées par l'option Mathématiques Expertes.",
+        acquis: "Cette période a été décisive pour structurer mon esprit logique et ma rigueur d'analyse. Les mathématiques expertes m'ont habitué à la résolution méthodique de problèmes complexes, tandis que la spécialité NSI a posé mes toutes premières bases en algorithmique et a confirmé ma volonté d'en faire mon métier.",
     },
 ];
 
@@ -52,10 +54,13 @@ export default function Home() {
                     {/* Citation glass */}
                     <div className="glass-card p-4 !rounded-xl border-l-4 border-accent">
                         <p className="font-body text-muted/80 text-base leading-tight italic">
-                            « First, solve the problem. Then, write the code. »
+                            « On ne change jamais les choses en combattant la
+                            réalité existante. Pour changer quelque chose,
+                            construisez un nouveau modèle qui rend l&apos;ancien
+                            obsolète. »
                         </p>
                         <p className="font-body text-muted/60 text-sm mt-1.5">
-                            — John Johnson
+                            - Buckminster Fuller
                         </p>
                     </div>
 
@@ -125,7 +130,7 @@ export default function Home() {
                     Mon parcours
                 </p>
 
-                <div className="space-y-5">
+                <div className="space-y-6">
                     {formations.map((f, i) => (
                         <div key={i} className="flex gap-6 group">
                             {/* Timeline */}
@@ -143,7 +148,7 @@ export default function Home() {
                             </div>
                             {/* Card */}
                             <div className="glass-card p-6 flex-1 mb-2">
-                                <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+                                <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
                                     <span className="font-mono text-xs gradient-text font-semibold">
                                         {f.periode}
                                     </span>
@@ -151,12 +156,22 @@ export default function Home() {
                                         {f.lieu}
                                     </span>
                                 </div>
-                                <h3 className="font-display text-lg font-semibold text-light mb-1">
+                                <h3 className="font-display text-lg font-semibold text-light mb-2">
                                     {f.titre}
                                 </h3>
                                 <p className="font-body text-sm text-muted leading-relaxed">
                                     {f.description}
                                 </p>
+
+                                {/* PARTIE ACQUIS : Phrases explicatives */}
+                                <div className="mt-5 pt-5 border-t border-border/40">
+                                    <h3 className="font-display text-lg font-semibold text-light mb-2">
+                                        Prise de recul :
+                                    </h3>
+                                    <p className="font-body text-sm text-light/90 leading-relaxed">
+                                        {f.acquis}
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     ))}

@@ -28,8 +28,19 @@ export default function RootLayout({
             <body
                 className={`${spaceGrotesk.variable} ${jetbrainsMono.variable}`}
             >
-                {/* Halo décoratif bas gauche */}
+                {/* Halo bas gauche */}
                 <div className="halo-bottom" />
+
+                {/* Formes géométriques de fond */}
+                <div className="geo-shapes">
+                    <div className="geo-triangle" />
+                    <div className="geo-diamond" />
+                    <div className="geo-line-1" />
+                    <div className="geo-dot-1" />
+                    <div className="geo-hex" />
+                    <div className="geo-circle-2" />
+                </div>
+
                 <Navbar />
                 <main>{children}</main>
                 <footer className="relative z-10 mt-20">

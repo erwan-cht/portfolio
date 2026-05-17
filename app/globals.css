@@ -23,7 +23,7 @@
     --color-accent: #0096cc;
     --color-accent-2: #0070a8;
     --color-accent-dim: rgba(0, 150, 204, 0.13);
-    --color-muted: #4a7e9b;
+    --color-muted: #ffffff;
     --color-light: #ddeef8;
 }
 
@@ -110,7 +110,6 @@ body::after {
     z-index: 0;
 }
 
-/* Halo bas gauche */
 .halo-bottom {
     position: fixed;
     bottom: -100px;
@@ -146,7 +145,6 @@ footer {
     border-radius: 99px;
 }
 
-/* Sélection */
 ::selection {
     background: rgba(0, 112, 168, 0.18);
     color: var(--color-accent);
@@ -299,5 +297,168 @@ footer {
         background: var(--color-accent);
         color: white;
         border-color: var(--color-accent);
+    }
+
+    .dark .tag-pill {
+        color: #ffffff;
+    }
+
+    /* ── FORMES GÉOMÉTRIQUES ── */
+    .geo-shapes {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 0;
+        overflow: hidden;
+    }
+
+    /* Cercle outline — haut gauche */
+    .geo-shapes::before {
+        content: "";
+        position: absolute;
+        top: 8%;
+        left: -80px;
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        border: 1.5px solid rgba(0, 112, 168, 0.18);
+        background: transparent;
+        animation: geo-float 10s ease-in-out infinite;
+    }
+
+    /* Carré rotatif — bas droite */
+    .geo-shapes::after {
+        content: "";
+        position: absolute;
+        bottom: 12%;
+        right: 5%;
+        width: 120px;
+        height: 120px;
+        border: 1.5px solid rgba(0, 112, 168, 0.15);
+        background: transparent;
+        transform: rotate(30deg);
+        animation: geo-spin 18s linear infinite;
+    }
+
+    /* Triangle — milieu droite */
+    .geo-triangle {
+        position: absolute;
+        top: 38%;
+        right: -20px;
+        width: 0;
+        height: 0;
+        border-left: 70px solid transparent;
+        border-right: 70px solid transparent;
+        border-bottom: 120px solid rgba(0, 112, 168, 0.07);
+        animation: geo-float 12s ease-in-out infinite 2s;
+    }
+
+    /* Losange — haut droite */
+    .geo-diamond {
+        position: absolute;
+        top: 15%;
+        right: 12%;
+        width: 60px;
+        height: 60px;
+        border: 1.5px solid rgba(0, 112, 168, 0.2);
+        background: rgba(0, 112, 168, 0.04);
+        transform: rotate(45deg);
+        animation: geo-float 8s ease-in-out infinite 1s;
+    }
+
+    /* Ligne diagonale — milieu gauche */
+    .geo-line-1 {
+        position: absolute;
+        top: 50%;
+        left: 3%;
+        width: 150px;
+        height: 1.5px;
+        background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(0, 112, 168, 0.25),
+            transparent
+        );
+        transform: rotate(-35deg);
+        animation: geo-fade 6s ease-in-out infinite;
+    }
+
+    /* Petit cercle plein — bas gauche */
+    .geo-dot-1 {
+        position: absolute;
+        bottom: 25%;
+        left: 8%;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: rgba(0, 112, 168, 0.15);
+        animation: geo-float 7s ease-in-out infinite 3s;
+    }
+
+    /* Hexagone CSS — centre gauche haut */
+    .geo-hex {
+        position: absolute;
+        top: 22%;
+        left: 6%;
+        width: 50px;
+        height: 29px;
+        background: rgba(0, 112, 168, 0.07);
+        clip-path: polygon(
+            25% 0%,
+            75% 0%,
+            100% 50%,
+            75% 100%,
+            25% 100%,
+            0% 50%
+        );
+        animation: geo-float 14s ease-in-out infinite 0.5s;
+    }
+
+    /* Grand cercle outline — bas centre */
+    .geo-circle-2 {
+        position: absolute;
+        bottom: -60px;
+        left: 35%;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 112, 168, 0.1);
+        background: transparent;
+        animation: geo-spin 25s linear infinite reverse;
+    }
+
+    @keyframes geo-float {
+        0%,
+        100% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-14px);
+        }
+    }
+    @keyframes geo-spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes geo-spin-diamond {
+        from {
+            transform: rotate(45deg);
+        }
+        to {
+            transform: rotate(405deg);
+        }
+    }
+    @keyframes geo-fade {
+        0%,
+        100% {
+            opacity: 0.4;
+        }
+        50% {
+            opacity: 1;
+        }
     }
 }
