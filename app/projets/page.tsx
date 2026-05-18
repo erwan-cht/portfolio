@@ -32,7 +32,7 @@ const projets = [
         titre: "Bus de Calais",
         sousTitre: "Application de réseau de bus",
         description:
-            "Développement d'une application de réseau de bus pour la ville de Calais. Cette application permet aux utilisateurs de trouver le meilleur trajet en reposant sur l'algorithme de Dijkstra.",
+            "Création d'une application pour le réseau de bus de la ville de Calais, conçue pour calculer le meilleur itinéraire grâce à l'algorithme de Dijkstra. Ce projet est important pour moi car c'est la première fois que je gérais le développement d'une application dans sa globalité. J'ai dû sortir de la théorie pour affronter des vrais défis de programmation : gérer efficacement une grande quantité de données interconnectées (le plan de la ville et les correspondances) et travailler sur l'optimisation des performances pour éviter que l'application ne rame lors des recherches de trajets.",
         tags: ["C#", "MySQL", "Trello"],
         lien: "https://github.com/erwan-cht/SAE_E4",
         image: "/projets/bus-calais.png",

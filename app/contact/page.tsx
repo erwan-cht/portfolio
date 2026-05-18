@@ -43,7 +43,7 @@ export default function Contact() {
                     </h1>
                 </div>
 
-                <div className="max-w-2xl space-y-6">
+                <div className="max-w-2xl mx-auto space-y-6">
                     <div className="glass-card p-5 !rounded-xl border-l-4 border-accent">
                         <div className="flex items-center gap-2 mb-2">
                             <span className="w-2 h-2 rounded-full bg-accent animate-pulse shadow-glow-sm" />

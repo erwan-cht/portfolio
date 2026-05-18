@@ -321,7 +321,7 @@ footer {
         width: 280px;
         height: 280px;
         border-radius: 50%;
-        border: 1.5px solid rgba(0, 112, 168, 0.18);
+        border: 2px solid rgba(0, 112, 168, 0.45);
         background: transparent;
         animation: geo-float 10s ease-in-out infinite;
     }
@@ -334,8 +334,8 @@ footer {
         right: 5%;
         width: 120px;
         height: 120px;
-        border: 1.5px solid rgba(0, 112, 168, 0.15);
-        background: transparent;
+        border: 2px solid rgba(0, 112, 168, 0.4);
+        background: rgba(0, 112, 168, 0.06);
         transform: rotate(30deg);
         animation: geo-spin 18s linear infinite;
     }
@@ -349,7 +349,7 @@ footer {
         height: 0;
         border-left: 70px solid transparent;
         border-right: 70px solid transparent;
-        border-bottom: 120px solid rgba(0, 112, 168, 0.07);
+        border-bottom: 120px solid rgba(0, 112, 168, 0.2);
         animation: geo-float 12s ease-in-out infinite 2s;
     }
 
@@ -360,8 +360,8 @@ footer {
         right: 12%;
         width: 60px;
         height: 60px;
-        border: 1.5px solid rgba(0, 112, 168, 0.2);
-        background: rgba(0, 112, 168, 0.04);
+        border: 2px solid rgba(0, 112, 168, 0.45);
+        background: rgba(0, 112, 168, 0.1);
         transform: rotate(45deg);
         animation: geo-float 8s ease-in-out infinite 1s;
     }
@@ -372,11 +372,11 @@ footer {
         top: 50%;
         left: 3%;
         width: 150px;
-        height: 1.5px;
+        height: 2px;
         background: linear-gradient(
             90deg,
             transparent,
-            rgba(0, 112, 168, 0.25),
+            rgba(0, 112, 168, 0.55),
             transparent
         );
         transform: rotate(-35deg);
@@ -391,18 +391,19 @@ footer {
         width: 18px;
         height: 18px;
         border-radius: 50%;
-        background: rgba(0, 112, 168, 0.15);
+        background: rgba(0, 112, 168, 0.4);
+        box-shadow: 0 0 12px rgba(0, 112, 168, 0.5);
         animation: geo-float 7s ease-in-out infinite 3s;
     }
 
-    /* Hexagone CSS — centre gauche haut */
+    /* Hexagone — centre gauche haut */
     .geo-hex {
         position: absolute;
         top: 22%;
         left: 6%;
         width: 50px;
         height: 29px;
-        background: rgba(0, 112, 168, 0.07);
+        background: rgba(0, 112, 168, 0.2);
         clip-path: polygon(
             25% 0%,
             75% 0%,
@@ -422,7 +423,7 @@ footer {
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        border: 1px solid rgba(0, 112, 168, 0.1);
+        border: 1.5px solid rgba(0, 112, 168, 0.3);
         background: transparent;
         animation: geo-spin 25s linear infinite reverse;
     }
@@ -444,18 +445,10 @@ footer {
             transform: rotate(360deg);
         }
     }
-    @keyframes geo-spin-diamond {
-        from {
-            transform: rotate(45deg);
-        }
-        to {
-            transform: rotate(405deg);
-        }
-    }
     @keyframes geo-fade {
         0%,
         100% {
-            opacity: 0.4;
+            opacity: 0.5;
         }
         50% {
             opacity: 1;
