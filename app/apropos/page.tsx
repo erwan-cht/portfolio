@@ -68,16 +68,13 @@ export default function Apropos() {
 
                     <div className="grid md:grid-cols-2 gap-5">
                         {valeurs.map((v) => (
-                            <div key={v.titre} className="glass-card p-7">
+                            <div className="glass-card p-7">
                                 <div className="flex items-center gap-4 mb-4">
                                     <div className="px-4 py-2 rounded-xl gradient-btn flex items-center justify-center flex-shrink-0 shadow-glow-sm">
                                         <span className="font-body text-white text-sm font-semibold whitespace-nowrap">
                                             {v.icone}
                                         </span>
                                     </div>
-                                    <h3 className="font-display text-xl font-bold text-light">
-                                        {v.titre}
-                                    </h3>
                                 </div>
                                 <p className="font-body text-muted leading-relaxed text-sm">
                                     {v.description}
@@ -103,15 +100,12 @@ export default function Apropos() {
 
                     <div className="grid md:grid-cols-3 gap-5">
                         {qualites.map((q) => (
-                            <div key={q.titre} className="glass-card p-6">
+                            <div className="glass-card p-6">
                                 <div className="px-4 py-2 rounded-xl gradient-btn inline-flex items-center justify-center mb-4 shadow-glow-sm">
                                     <span className="font-body text-white text-sm font-semibold whitespace-nowrap">
                                         {q.icone}
                                     </span>
                                 </div>
-                                <h3 className="font-display text-lg font-bold text-light mb-3">
-                                    {q.titre}
-                                </h3>
                                 <p className="font-body text-muted leading-relaxed text-sm">
                                     {q.description}
                                 </p>
@@ -136,13 +130,14 @@ export default function Apropos() {
                     </h2>
 
                     <div className="glass-card p-8 border-l-4 border-accent">
-                        <p className="font-body text-muted leading-relaxed mb-4">
-                            Mon défi actuel, c'est de moins ruminer mes
+                        <p className="font-body text-muted leading-relaxed">
+                            Mon défi actuel, c&apos;est de moins ruminer mes
                             décisions. Je passe souvent trop de temps à peser le
-                            pour et le contre avant d'agir. Aujourd'hui, je
-                            m'efforce de raccourcir cette phase de réflexion :
-                            j'apprends à faire un choix, à l'assumer, et à
-                            passer à la suite sans regarder en arrière.
+                            pour et le contre avant d&apos;agir.
+                            Aujourd&apos;hui, je m&apos;efforce de raccourcir
+                            cette phase de réflexion : j&apos;apprends à faire
+                            un choix, à l&apos;assumer, et à passer à la suite
+                            sans regarder en arrière.
                         </p>
                     </div>
                 </div>
@@ -161,7 +156,6 @@ export default function Apropos() {
                         Mon <span className="gradient-text">CV</span>
                     </h2>
 
-                    {/* Aperçu image du CV */}
                     <div className="glass-card overflow-hidden mb-8 max-w-2xl mx-auto">
                         <div className="relative w-full aspect-[210/297]">
                             <Image
@@ -173,7 +167,6 @@ export default function Apropos() {
                         </div>
                     </div>
 
-                    {/* Bouton téléchargement */}
                     <div className="flex justify-center">
                         <a
                             href="/CHRIST-ERWAN-CV.pdf"
