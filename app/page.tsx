@@ -32,6 +32,11 @@ export default function Home() {
                         BUT 2 Informatique
                     </div>
 
+                    {/* Titre métier — AJOUT ICI */}
+                    <p className="font-mono text-xl text-muted tracking-widest uppercase">
+                        Développeur Full Stack
+                    </p>
+
                     {/* Nom */}
                     <div>
                         <h1 className="font-display text-6xl md:text-8xl font-bold leading-none tracking-tight">

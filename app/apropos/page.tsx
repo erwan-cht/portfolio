@@ -142,52 +142,89 @@ export default function Apropos() {
                     </div>
                 </div>
 
-                {/* ── CV ── */}
-                <div>
+                {/* ── RÉFLEXION & PRISE DE RECUL ── */}
+                <div className="mb-20">
                     <div className="flex items-center gap-4 mb-8">
                         <div className="flex-1 gradient-line" />
                         <span className="font-mono text-xs text-accent px-2">
-                            // curriculum vitae
+                            // réflexion
                         </span>
                         <div className="flex-1 gradient-line" />
                     </div>
 
                     <h2 className="font-display text-3xl font-bold text-light mb-8">
-                        Mon <span className="gradient-text">CV</span>
+                        Ma <span className="gradient-text">réflexion</span> &
+                        prise de recul
                     </h2>
 
-                    <div className="glass-card overflow-hidden mb-8 max-w-2xl mx-auto">
-                        <div className="relative w-full aspect-[210/297]">
-                            <Image
-                                src="/cv.jpg"
-                                alt="Aperçu du CV de Erwan Christ"
-                                fill
-                                className="object-contain"
-                            />
+                    <div className="space-y-5">
+                        {/* Card 1 */}
+                        <div className="glass-card p-7 border-l-4 border-accent">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="px-4 py-2 rounded-xl gradient-btn inline-flex items-center justify-center shadow-glow-sm">
+                                    <span className="font-body text-white text-sm font-semibold whitespace-nowrap">
+                                        Technique
+                                    </span>
+                                </div>
+                            </div>
+                            <p className="font-body text-muted leading-relaxed text-sm">
+                                La rigueur que j'ai développée en maths expertes
+                                m'a directement servi en informatique.
+                                Comprendre un problème avant de le coder,
+                                décomposer une tâche complexe en étapes simples,
+                                tester avant de valider, ce sont des réflexes
+                                que j'ai forgés bien avant d'écrire mes
+                                premières lignes de PHP ou de Java. La technique
+                                s'apprend, la méthode se construit.
+                            </p>
                         </div>
-                    </div>
 
-                    <div className="flex justify-center">
-                        <a
-                            href="/CHRIST-ERWAN-CV.pdf"
-                            download
-                            className="gradient-btn inline-flex items-center gap-3 px-8 py-4 rounded-xl font-body font-semibold text-white text-sm shadow-glow"
-                        >
-                            <svg
-                                className="w-5 h-5"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"
-                                />
-                            </svg>
-                            Télécharger mon CV (PDF)
-                        </a>
+                        {/* Card 2 */}
+                        <div className="glass-card p-7 border-l-4 border-accent">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="px-4 py-2 rounded-xl gradient-btn inline-flex items-center justify-center shadow-glow-sm">
+                                    <span className="font-body text-white text-sm font-semibold whitespace-nowrap">
+                                        Parcours
+                                    </span>
+                                </div>
+                            </div>
+                            <p className="font-body text-muted leading-relaxed text-sm">
+                                Mon parcours, NSI au lycée, BUT Informatique,
+                                stage en entreprise, m&apos;a appris que chaque
+                                étape a une valeur propre, même si elle ne
+                                semble pas spectaculaire sur le moment. Les
+                                maths expertes m&apos;ont appris à raisonner. Le
+                                BUT m&apos;a appris à produire. Le stage
+                                m&apos;a appris à m&apos;adapter. Je commence à
+                                comprendre que ce n&apos;est pas la vitesse du
+                                parcours qui compte, mais la cohérence de ce
+                                qu&apos;on construit au fil du temps.
+                            </p>
+                        </div>
+
+                        {/* Card 3 */}
+                        <div className="glass-card p-7 border-l-4 border-accent">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="px-4 py-2 rounded-xl gradient-btn inline-flex items-center justify-center shadow-glow-sm">
+                                    <span className="font-body text-white text-sm font-semibold whitespace-nowrap">
+                                        Humain
+                                    </span>
+                                </div>
+                            </div>
+                            <p className="font-body text-muted leading-relaxed text-sm">
+                                Ce que j&apos;ai le plus appris en deux ans, ce
+                                n&apos;est pas un langage ou un framework,
+                                c&apos;est à travailler avec les autres. Que ce
+                                soit sur MonCovoitJV en équipe ou en stage dans
+                                un service informatique structuré, j&apos;ai
+                                réalisé que la qualité d&apos;un projet dépend
+                                autant des relations humaines que du code
+                                produit. La communication, l&apos;écoute, savoir
+                                dire quand on est bloqué, ce sont des
+                                compétences aussi importantes que la maîtrise
+                                technique, et elles se travaillent tout autant.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

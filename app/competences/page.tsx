@@ -106,6 +106,32 @@ export default function Competences() {
                         </div>
                     ))}
                 </div>
+
+                <div className="glass-card p-7 border-l-4 border-accent">
+                    <div className="flex items-center gap-3 mb-4">
+                        <div className="px-4 py-2 rounded-xl gradient-btn inline-flex items-center justify-center shadow-glow-sm">
+                            <span className="font-body text-white text-sm font-semibold whitespace-nowrap">
+                                Compétences du programme national du BUT
+                                Informatique
+                            </span>
+                        </div>
+                    </div>
+                    <p className="font-body text-muted leading-relaxed text-sm">
+                        Lors de ma formation en BUT Informatique, j&apos;ai
+                        acquis des compétences solides dans plusieurs domaines
+                        clés de l&apos;informatique. En programmation, j&apos;ai
+                        maîtrisé des langages tels que Java, Python et PHP, ce
+                        qui m&apos;a permis de développer des applications web
+                        et des projets logiciels variés. En matière de bases de
+                        données, j&apos;ai travaillé avec MySQL et PhpMyAdmin,
+                        renforçant ma capacité à concevoir et gérer des bases de
+                        données relationnelles. Enfin, j&apos;ai développé des
+                        compétences en soft skills, notamment en communication,
+                        travail d&apos;équipe et méthodologies agiles comme
+                        Scrum, qui sont essentielles pour réussir dans un
+                        environnement professionnel dynamique.
+                    </p>
+                </div>
             </div>
         </div>
     );

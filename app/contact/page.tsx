@@ -101,6 +101,54 @@ export default function Contact() {
                             </div>
                         ))}
                     </div>
+                    {/* ── CV ── */}
+                    <div>
+                        <div className="flex items-center gap-4 mb-8">
+                            <div className="flex-1 gradient-line" />
+                            <span className="font-mono text-xs text-accent px-2">
+                                // curriculum vitae
+                            </span>
+                            <div className="flex-1 gradient-line" />
+                        </div>
+
+                        <h2 className="font-display text-3xl font-bold text-light mb-8">
+                            Mon <span className="gradient-text">CV</span>
+                        </h2>
+
+                        <div className="glass-card overflow-hidden mb-8 max-w-2xl mx-auto">
+                            <div className="relative w-full aspect-[210/297]">
+                                <Image
+                                    src="/cv.jpg"
+                                    alt="Aperçu du CV de Erwan Christ"
+                                    fill
+                                    className="object-contain"
+                                />
+                            </div>
+                        </div>
+
+                        <div className="flex justify-center">
+                            <a
+                                href="/CHRIST-ERWAN-CV.pdf"
+                                download
+                                className="gradient-btn inline-flex items-center gap-3 px-8 py-4 rounded-xl font-body font-semibold text-white text-sm shadow-glow"
+                            >
+                                <svg
+                                    className="w-5 h-5"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth={2}
+                                        d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"
+                                    />
+                                </svg>
+                                Télécharger mon CV (PDF)
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
